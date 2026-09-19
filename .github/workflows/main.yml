@@ -1,0 +1,81 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Capacitor
+        run: |
+          npm init -y
+          npm install @capacitor/core @capacitor/cli @capacitor/android
+
+      - name: Prepare web app
+        run: |
+          mkdir -p www
+
+          if [ -f index.html ]; then
+            cp index.html www/index.html
+          else
+            cat > www/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="sq">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Kostumi Im</title>
+          </head>
+          <body>
+            <h1>Kostumi Im</h1>
+          </body>
+          </html>
+          EOF
+          fi
+
+          find . -maxdepth 1 -type f \( -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.webmanifest" \) -exec cp {} www/ \;
+
+          [ -d "App Assets" ] && cp -r "App Assets" www/
+          [ -d "Costume Image v1" ] && cp -r "Costume Image v1" www/
+          [ -d "Imazhe" ] && cp -r "Imazhe" www/
+          [ -d "Menu Assets" ] && cp -r "Menu Assets" www/
+          [ -d "Source" ] && cp -r "Source" www/
+
+          test -f www/index.html
+
+      - name: Configure Capacitor
+        run: |
+          cat > capacitor.config.json <<'EOF'
+          {
+            "appId": "al.kostumiim.web",
+            "appName": "Kostumi Im",
+            "webDir": "www"
+          }
+          EOF
+
+      - name: Create Android project
+        run: |
+          npx cap add android
+          npx cap sync android
+
+      - name: Build APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kostumi-Im-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk
