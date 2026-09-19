@@ -1,0 +1,155 @@
+{
+  "project": "Atlasi i Kostumeve Tradicionale Shqiptare",
+  "scope": "Missing raster images for five later profiles with existing 3D previews",
+  "generated_images": 5,
+  "master_ids": [
+    "MASTER 179",
+    "MASTER 180",
+    "MASTER 181",
+    "MASTER 182",
+    "MASTER 183"
+  ],
+  "current_atlas_entries": 183,
+  "prior_178_records_unchanged": true,
+  "decor_unchanged": true,
+  "wardrobe_unchanged": true,
+  "new_3d_models_generated": 0,
+  "historical_accuracy_certified": false,
+  "editorial_approval": "NOT CLAIMED",
+  "method": "Built-in image generation; selected original outputs copied byte-for-byte with native alpha; no Python raster editing",
+  "technical_image_checks": "PASS — five separate portrait RGBA PNGs, real transparent pixels, uncut full-body subjects, no text or weapons on visual inspection",
+  "reference_issue_corrected": "Villa Badessa female Commons illustration excluded; male KC-989 watercolor used",
+  "palette_policy": "Source colors used for 181; grayscale-informed 180; existing model palette and conservative generic structure for 179,182,183",
+  "items": [
+    {
+      "master_id": "MASTER 179",
+      "title": "Arvanit — burrë, shek. XIX",
+      "filename": "MASTER_179_Image_V1.png",
+      "sha256": "ae2306bb91e913fb2f40eb98988252adb5e79e3a03add4e204ecee7e10758189",
+      "original_generation_file": "exec-1eebf4c3-2488-4c9d-b12e-04c02e298441.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_pixels_pct": 67.49,
+      "maximum_edge_alpha": 0,
+      "caution": "Rikrijim ilustrues me IA; nuk është fotografi historike. Tipologji mashkullore arvanite e përgjithshme; paleta e kufizuar mbështetet te modeli ekzistues. Nuk pretendohet uniformë e një fshati të caktuar.",
+      "sources": [
+        {
+          "title": "Amadeo Preziosi, Men in Arvanite costume, 1855",
+          "url": "https://www.mutualart.com/Artwork/Men-in-Arvanite-costume/D543A47F47496DD14624375A956E8A26",
+          "role": "Referencë vizuale mashkullore e përgjithshme arvanite; jo provë e detajeve të çdo fshati."
+        }
+      ],
+      "new_3d_models_generated": 0
+    },
+    {
+      "master_id": "MASTER 180",
+      "title": "Prizren — burrë, 1873",
+      "filename": "MASTER_180_Image_V1.png",
+      "sha256": "ea10d9aa922d96d173d0b75e93d791a6c2d44382dfd20c12f691306a9a05e8bc",
+      "original_generation_file": "exec-6545c928-fc53-4d24-8a51-876510c5ce4b.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_pixels_pct": 69.6,
+      "maximum_edge_alpha": 0,
+      "caution": "Rikrijim ilustrues me IA; nuk është fotografi historike. Forma ndjek burrin e figurës 2 të pllakës së vitit 1873. Ngjyrat janë të përmbajtura dhe ilustrative; nuk janë të vërtetuara nga fotografia monokrome. Nuk përdoret fustanellë.",
+      "sources": [
+        {
+          "title": "Pascal Sébah, Plate XII, figura 2, Paysan des environs de Prisren, 1873",
+          "url": "https://www.loc.gov/item/2004666978/",
+          "role": "Vetëm burri në qendër; paleta e kufizuar është ilustrim, sepse fotografia është monokrome."
+        }
+      ],
+      "new_3d_models_generated": 0
+    },
+    {
+      "master_id": "MASTER 181",
+      "title": "Villa Badessa — burrë arbëresh",
+      "filename": "MASTER_181_Image_V1.png",
+      "sha256": "733e74a9e8a8963eca8b660219d1fd93eddc5d1693fd8ca452ab39a53e7d3dbf",
+      "original_generation_file": "exec-9086cec9-054c-4499-96f3-626c705dfe41.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_pixels_pct": 72.0,
+      "maximum_edge_alpha": 1,
+      "caution": "Rikrijim ilustrues me IA; nuk është fotografi historike. Rindërtim ilustrues i veshjes mashkullore në pikturën KC-989 të Michela de Vito; pamja ballore është interpretuar dhe armët janë hequr.",
+      "sources": [
+        {
+          "title": "Michela de Vito, Costume di Villabadessa, rreth viteve 1820 — figura mashkullore",
+          "url": "https://somersetandwood.com/products/michela-de-vito-costume-di-villabadessa-albanian-colony-province-of-teramo-in-the-kingdom-of-naples-original-c-1820s-watercolour-painting-kc-989",
+          "role": "Piktura mashkullore KC-989. Figura femërore në lidhjen e vjetër Commons nuk është përdorur. Armët janë hequr."
+        }
+      ],
+      "new_3d_models_generated": 0
+    },
+    {
+      "master_id": "MASTER 182",
+      "title": "Guci — burrë",
+      "filename": "MASTER_182_Image_V1.png",
+      "sha256": "f86a023a51bdfeefac35257e0e942ba360eb7cac37d29277ec8fbf2010edab41",
+      "original_generation_file": "exec-705e85f7-105e-4244-887f-c34782872033.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_pixels_pct": 68.47,
+      "maximum_edge_alpha": 0,
+      "caution": "Rikrijim ilustrues me IA; nuk është fotografi historike. Fustanella fiksohet nga dosja historike e vitit 1878; ngjyrat dhe hollësitë lokale mashkullore mbeten të pakonfirmuara. Përdoret paleta e thjeshtë e modelit ekzistues.",
+      "sources": [
+        {
+          "title": "E. F. Knight, Albania: A Narrative of Recent Travel, 1878",
+          "url": "https://www.albanianhistory.org/1878_Knight/index.html",
+          "role": "Dëshmi tekstuale për fustanellën. Teksti i plotë nuk u rikthye në këtë sesion; përdoren kufizimet e dosjes së ruajtur. Ngjyrat dhe ornamentet lokale nuk janë certifikuar."
+        }
+      ],
+      "new_3d_models_generated": 0
+    },
+    {
+      "master_id": "MASTER 183",
+      "title": "Kiriaki / Beoti — burrë arvanit",
+      "filename": "MASTER_183_Image_V1.png",
+      "sha256": "7a8829cde6bea74c0bdf6060eeb43df046a159d49ded3360788364009bbf80a7",
+      "original_generation_file": "exec-9787475e-0830-4613-9220-50e18ded9056.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_pixels_pct": 67.42,
+      "maximum_edge_alpha": 0,
+      "caution": "Rikrijim ilustrues me IA; nuk është fotografi historike. Konteksti Kiriaki/Beoti është lokal; struktura mashkullore mbështetet te tipologjia e përgjithshme arvanite. Asnjë ornament ose paletë nuk pretendohet si specifike e Kiriakit.",
+      "sources": [
+        {
+          "title": "Folklore Museum, Kiriaki",
+          "url": "https://politistikoskiriakiou.gr/en/folklore-museum/",
+          "role": "Dokumenton kontekstin lokal arvanit; nuk provon hollësitë e veshjes mashkullore të shekullit XIX."
+        },
+        {
+          "title": "Amadeo Preziosi, Men in Arvanite costume, 1855",
+          "url": "https://www.mutualart.com/Artwork/Men-in-Arvanite-costume/D543A47F47496DD14624375A956E8A26",
+          "role": "Referencë vizuale mashkullore e përgjithshme arvanite; jo provë e detajeve të çdo fshati."
+        }
+      ],
+      "new_3d_models_generated": 0
+    }
+  ],
+  "atlas_sha256": "ce3301025d3f1024c94563e1093f198b643cbea156dd2b37ff2987576f15c5dc",
+  "browser_verification": {
+    "images_loaded": 5,
+    "gallery_contains_five_separate_images": true,
+    "atlas_profiles_use_their_own_new_image": 5,
+    "all_profiles_include_AI_attribution_and_sources": true,
+    "javascript_errors": 0,
+    "gallery_overflow": false,
+    "scope": "New raster images and their attribution only; no wardrobe tests."
+  }
+}
